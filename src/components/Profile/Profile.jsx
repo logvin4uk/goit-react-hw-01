@@ -1,6 +1,6 @@
 import css from "./Profile.module.css";
 
-// import { IoIosAt } from "react-icons/io";
+import { IoIosAt } from "react-icons/io";
 
 const Profile = ({ name, tag, location, image, stats }) => {
   return (
@@ -9,7 +9,6 @@ const Profile = ({ name, tag, location, image, stats }) => {
         <img className={css.avatar} src={image} alt="User avatar" />
         <p className={css.name}>{name}</p>
         <p className={css.text}>
-          {" "}
           <IoIosAt />
           {tag}
         </p>
